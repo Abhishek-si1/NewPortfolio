@@ -1,5 +1,7 @@
+/* Universal Animation Styles */
 * {
     animation: fadeIn 1s ease-in-out forwards;
+    box-sizing: border-box; /* Improves layout stability */
 }
 
 @keyframes fadeIn {
@@ -11,8 +13,10 @@
     }
 }
 
+/* General Styles */
 html {
     scroll-behavior: smooth;
+    font-size: 16px; /* Base font size for better accessibility */
 }
 
 body {
@@ -24,6 +28,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -76,6 +81,7 @@ body {
     width: 100%;
 }
 
+/* Introduction Section */
 .intro {
     margin-top: 100px;
     text-align: left;
@@ -125,6 +131,7 @@ body {
     transform: translateY(-5px);
 }
 
+/* Content Sections */
 .about, .edu, .skills, .project {
     display: flex;
     align-items: flex-start;
@@ -133,11 +140,11 @@ body {
     animation: fadeUp 2s ease-in-out forwards;
 }
 
-.about-description{
+.about-description {
     padding-left: 40px;
 }
 
-.about h2, .project h2, .skills h2{
+.about h2, .project h2, .skills h2 {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-size: 24px;
@@ -159,20 +166,21 @@ body {
 }
 
 h6 {
-    margin: 0px;
+    margin: 0;
     font-size: 20px;
     margin-top: 50px;
 }
 
 .about-description, .edu-description, .skills-description, .project-description {
     max-width: 800px;
-    margin: 0px;
+    margin: 0;
     font-size: 16px;
     line-height: 1.6;
     color: #ccd6f6;
     animation: fadeUp 2s ease-in-out forwards;
 }
 
+/* Social Links */
 .socials {
     list-style: none;
     padding: 0;
@@ -205,6 +213,7 @@ h6 {
     font-size: 14px;
 }
 
+/* Footer Section */
 #bottom {
     width: auto;
     display: flex;
@@ -212,6 +221,7 @@ h6 {
     justify-content: center;
 }
 
+/* Responsive Design */
 @media (min-width: 768px) {
     .navbar li {
         margin: 0 10px;
